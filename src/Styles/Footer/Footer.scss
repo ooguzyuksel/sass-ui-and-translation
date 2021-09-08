@@ -1,0 +1,27 @@
+@import "../Variables/Variables.scss";
+
+.container-footer {
+  @include backgroundImage;
+  padding: 50px 25px;
+  text-align: left;
+  font-size: 15px;
+
+  & p {
+      color: $titleGray;
+  }
+
+  & ul {
+    display: flex;
+    list-style: none;
+
+    & li {
+      padding: 10px 15px 10px 0px;
+      color: $blue;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba($color: $gray, $alpha: 0.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Roboto:wght@100;400;700&display=swap");
+
+$roboto: "Roboto", sans-serif;
+$kaisei: "Kaisei HarunoUmi", serif;
+
+//Colors
+$gray: #8e96a3;
+$blue: #013365;
+$titleGray: #6b717f;
+$green: #699;
+$purple: #bf4080;
+$white: #fff;
+$codeGray: rgba(0,51,102,0.0625);
+$popGray: #c0c0c0;
+
+//Background
+@mixin backgroundImage {
+  background-image: url("../images/sass-bg.png");
+  background-repeat: no-repeat;
+}
+
+//Display Types
+@mixin justifyCenterDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Texts and Titles
+@mixin greenTitle {
+  color: $green;
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+@mixin mainTitle {
+  font-family: $roboto;
+  width: 100%;
+  margin: 0 auto;
+  @include backgroundImage;
+  font-weight: 100;
+  font-size: 5rem;
+  color: $titleGray;
+  padding: 25px 0 25px 0;
+}

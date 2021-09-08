@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Roboto:wght@100;400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #013365;
+  max-height: 150px;
+  padding: 10px 25px;
+  background-image: url("../images/sass-bg.png");
+  background-repeat: no-repeat;
+}
+
+.container-nav .logo img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.container-nav .buttons a {
+  text-decoration: none;
+  padding: 0 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.container-nav .buttons a.active-button {
+  pointer-events: visible;
+  opacity: 1;
+}
+
+.container-nav .buttons a:active {
+  color: #013365;
+}
+
+.container-nav .buttons a:visited {
+  color: #013365;
+}
+
+.container-nav .buttons input {
+  padding: 10px 10px;
+  font-size: 1rem;
+  border: 1px solid #6b717f;
+}
+
+.container-nav.btn-disable {
+  cursor: not-allowed;
+  pointer-events: none;
+  /*Button disabled - CSS color class*/
+  color: #c0c0c0;
+  background-color: #ffffff;
+}
+
+.top-stripe {
+  display: block;
+  height: 0.25rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c69), color-stop(8.33333%, #c69), color-stop(8.33333%, #b37399), color-stop(16.66667%, #b37399), color-stop(16.66667%, #998099), color-stop(25%, #998099), color-stop(25%, #699), color-stop(33.33333%, #699), color-stop(33.33333%, #d2e1dd), color-stop(41.66667%, #d2e1dd), color-stop(41.66667%, #fff), color-stop(50%, #fff), color-stop(50%, #f2ece4), color-stop(58.33333%, #f2ece4), color-stop(58.33333%, #e1d7d2), color-stop(66.66667%, #e1d7d2), color-stop(66.66667%, #dadbdf), color-stop(75%, #dadbdf), color-stop(75%, #808c99), color-stop(83.33333%, #808c99), color-stop(83.33333%, #6b717f), color-stop(91.66667%, #6b717f), color-stop(91.66667%, #036), to(#036));
+  background-image: linear-gradient(to right, #c69 0%, #c69 8.33333%, #b37399 8.33333%, #b37399 16.66667%, #998099 16.66667%, #998099 25%, #699 25%, #699 33.33333%, #d2e1dd 33.33333%, #d2e1dd 41.66667%, #fff 41.66667%, #fff 50%, #f2ece4 50%, #f2ece4 58.33333%, #e1d7d2 58.33333%, #e1d7d2 66.66667%, #dadbdf 66.66667%, #dadbdf 75%, #808c99 75%, #808c99 83.33333%, #6b717f 83.33333%, #6b717f 91.66667%, #036 91.66667%, #036 100%);
+  background-size: 100%;
+}
+
+.blob {
+  background: #c0c0c0;
+  margin: 10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 0 0 0 #c0c0c0;
+          box-shadow: 0 0 0 0 #c0c0c0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 #c0c0c0;
+            box-shadow: 0 0 0 0 #c0c0c0;
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px #c0c0c0;
+            box-shadow: 0 0 0 10px #c0c0c0;
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 #c0c0c0;
+            box-shadow: 0 0 0 0 #c0c0c0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 #c0c0c0;
+            box-shadow: 0 0 0 0 #c0c0c0;
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px #c0c0c0;
+            box-shadow: 0 0 0 10px #c0c0c0;
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 #c0c0c0;
+            box-shadow: 0 0 0 0 #c0c0c0;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .container-nav .logoMainDiv {
+    width: 100%;
+  }
+  .container-nav .buttons .deactive-button {
+    display: none;
+  }
+  .container-nav .buttons .link {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 10px 0;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

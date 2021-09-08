@@ -1,0 +1,62 @@
+@import "../Variables/Variables.scss";
+
+@mixin cardContainerResize {
+  max-width: 70vw;
+  margin: 50px auto;
+  text-align: left;
+}
+.container-learnSass {
+  @include greenTitle;
+  @include cardContainerResize;
+
+  & a {
+    text-decoration: none
+  }
+}
+
+.container-card {
+  @include cardContainerResize;
+  color: $titleGray;
+
+  & h2 {
+    font-size: 30px;
+    padding: 15px 0;
+    font-weight: 500;
+  }
+
+  & p {
+    font-weight: 500;
+    padding: 10px 0;
+    & code {
+      font-weight: bold;
+    }
+  }
+
+  & pre {
+    border: 1px solid #ebebeb;
+    background: $codeGray;
+    padding: 10px;
+    overflow: auto;
+  }
+
+  hr {
+    margin: 50px 0;
+  }
+
+  section .double-code {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & pre {
+      width: 500px;
+      margin: 10px 0;
+      overflow: auto;
+    }
+
+    &.full {
+      width: 100%;
+    }
+  }
+}
+

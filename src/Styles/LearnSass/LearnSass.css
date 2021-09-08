@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Roboto:wght@100;400;700&display=swap");
+.container-learnSass {
+  color: #699;
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-align: left;
+  max-width: 70vw;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.container-learnSass a {
+  text-decoration: none;
+}
+
+.container-card {
+  max-width: 70vw;
+  margin: 50px auto;
+  text-align: left;
+  color: #6b717f;
+}
+
+.container-card h2 {
+  font-size: 30px;
+  padding: 15px 0;
+  font-weight: 500;
+}
+
+.container-card p {
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.container-card p code {
+  font-weight: bold;
+}
+
+.container-card pre {
+  border: 1px solid #ebebeb;
+  background: rgba(0, 51, 102, 0.0625);
+  padding: 10px;
+  overflow: auto;
+}
+
+.container-card hr {
+  margin: 50px 0;
+}
+
+.container-card section .double-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-card section .double-code pre {
+  width: 500px;
+  margin: 10px 0;
+  overflow: auto;
+}
+
+.container-card section .double-code.full {
+  width: 100%;
+}
+/*# sourceMappingURL=LearnSass.css.map */

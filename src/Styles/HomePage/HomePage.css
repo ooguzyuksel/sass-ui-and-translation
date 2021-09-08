@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Roboto:wght@100;400;700&display=swap");
+.title-home {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../images/sass-bg.png");
+  background-repeat: no-repeat;
+  font-weight: 100;
+  font-size: 5rem;
+  color: #6b717f;
+  padding: 25px 0 25px 0;
+}
+
+.subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.subtitle .left-title {
+  width: 40rem;
+  margin: 0 30px;
+  padding: 15px 0;
+  color: #699;
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+.subtitle .right-glass {
+  width: 40rem;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+.subtitle img {
+  max-width: 100%;
+}
+
+.release-info {
+  width: 100%;
+  height: 50px;
+  background-color: #bf4080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.release-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.release-info ul li {
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.release-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cards {
+  width: 100%;
+  margin: 0 15px;
+  color: #6b717f;
+  padding: 30px 0;
+}
+
+.cards ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards ul li {
+  max-width: 400px;
+  margin: 25px 0;
+  list-style: none;
+  text-align: left;
+}
+
+.cards ul li h2 {
+  font-size: 30px;
+  padding: 15px 0;
+  font-weight: 500;
+}
+
+.cards ul li p {
+  font-weight: 500;
+}
+
+.cards a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=HomePage.css.map */

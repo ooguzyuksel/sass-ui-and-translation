@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&family=Roboto:wght@100;400;700&display=swap");
+.container-footer {
+  background-image: url("../images/sass-bg.png");
+  background-repeat: no-repeat;
+  padding: 50px 25px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.container-footer p {
+  color: #6b717f;
+}
+
+.container-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.container-footer ul li {
+  padding: 10px 15px 10px 0px;
+  color: #013365;
+  cursor: pointer;
+}
+
+.container-footer ul li:hover {
+  background-color: rgba(142, 150, 163, 0.1);
+}
+/*# sourceMappingURL=Footer.css.map */

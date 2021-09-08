@@ -1,0 +1,145 @@
+@import "../Variables/Variables.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: $roboto;
+}
+
+.container-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: $blue;
+  max-height: 150px;
+  padding: 10px 25px;
+
+  @include backgroundImage;
+
+  & .logo img {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  & .buttons a {
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    pointer-events: none;
+    opacity: 0.5;
+
+    &.active-button {
+      pointer-events: visible;
+      opacity: 1;
+    }
+    &:active {
+      color: $blue;
+    }
+    &:visited {
+      color: $blue;
+    }
+  }
+
+  & .buttons input {
+    padding: 10px 10px;
+    font-size: 1rem;
+    border: 1px solid $titleGray;
+  }
+
+  &.btn-disable {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    /*Button disabled - CSS color class*/
+    color: #c0c0c0;
+    background-color: #ffffff;
+  }
+}
+.top-stripe {
+  display: block;
+  height: 0.25rem;
+  background-image: linear-gradient(
+    to right,
+    #c69 0%,
+    #c69 8.33333%,
+    #b37399 8.33333%,
+    #b37399 16.66667%,
+    #998099 16.66667%,
+    #998099 25%,
+    #699 25%,
+    #699 33.33333%,
+    #d2e1dd 33.33333%,
+    #d2e1dd 41.66667%,
+    #fff 41.66667%,
+    #fff 50%,
+    #f2ece4 50%,
+    #f2ece4 58.33333%,
+    #e1d7d2 58.33333%,
+    #e1d7d2 66.66667%,
+    #dadbdf 66.66667%,
+    #dadbdf 75%,
+    #808c99 75%,
+    #808c99 83.33333%,
+    #6b717f 83.33333%,
+    #6b717f 91.66667%,
+    #036 91.66667%,
+    #036 100%
+  );
+  background-size: 100%;
+}
+
+.blob {
+  background: $popGray;
+  margin: 10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 1px;
+
+  box-shadow: 0 0 0 0 $popGray;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 $popGray;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px $popGray;
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 $popGray;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .container-nav {
+    & .logoMainDiv {
+      width: 100%;
+    }
+
+    & .buttons {
+      & .deactive-button {
+        display: none;
+      }
+
+      & .link {
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        align-content: center;
+        padding: 10px 0;
+      }      
+    }
+  }
+}
