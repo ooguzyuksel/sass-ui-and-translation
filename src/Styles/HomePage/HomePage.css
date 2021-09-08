@@ -48,7 +48,7 @@
 
 .release-info {
   width: 100%;
-  height: 50px;
+  height: 75px;
   background-color: #bf4080;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,5 +122,20 @@
 
 .cards a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 924px) {
+  .cards ul li {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .subtitle img {
+    width: 90%;
+  }
+  .release-info {
+    padding: 15px 0;
+    margin: 0 auto;
+    border: 5px solid red;
+  }
 }
 /*# sourceMappingURL=HomePage.css.map */
